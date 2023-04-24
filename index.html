@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/b5a52ed67c.js" crossorigin="anonymous"></script>
+    <title>Tapish Talan</title>
+</head>
+<body>
+    <a href="#header"><div id="progress"><span id="progress-value">&#x1F815;</span></div></a>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#about" onclick="closemenu()">My Intro</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact Me</a></li>
+                <li><a href="game/game_index.html" target="_blank">Play a Game</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hi, I'm</p>
+            <h1>TAPISH <span>TALAN</span></h1>
+            <h4 id="text"></h4>
+            <p class="info">Loving the process as much as outcome.</p>
+        </div>
+        <div class="info-div">
+                <a href="#" class="btn1">My Resume</a>
+        </div>
+        <a href="#about"><div id="scroll-down"></div></a>
+    </div>
+</div>
+
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">My Intro</h1>
+                <p class="about-intro"><br>Hello, my name is Tapish Talan, and I am a final-year student at National Institute of Technology, Patna. I am currently studying Electronics and Communication Engineering,
+                     and has an emphasis on programming.<br><br>I have always had a passion for technology, since my childhood I have been taking things apart and learning how they are engineered. Still, it wasn’t until 
+                     the junior year when I came to know about arduino, raspbarry pie and the spark for programming started. I have been able to apply what I’ve learned in many projects and I love that little adrenaline
+                      rush after every completed project.<br></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Language</span><br>Python, C, C++, HTML, CSS, Java Script</li>
+                            <li><span>Core</span><br>Data structures and Alorithms<br>Object Oriented Programming<br>Cloud Computing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-Current</span><br>B-tech in ECE from NIT Patna</li>
+                            <li><span>2019</span><br>Plus 2 from Pragyan Public School G.B. Nagar</li>
+                            <li><span>2017</span><br>Matric from Pragyan Public School G.B. Nagar</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Exploration</span><br>Travelling to different cities</li>
+                            <li><span>Art</span><br>Lover of minimilasm</li>
+                            <li><span>Reading</span><br>Worth every second</li>
+                            <li><span>Electronics</span><br>The complexicity and simplicity excites me</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/work-2.png">
+                <div class="layer">
+                    <h3>2D-Plotter</h3
+                    <p>Arduino based two dimensional paper plotter that uses old PC DVD drivers as X and Y linear drives.</p>
+                    <a href="https://github.com/tapish101/2dPlotter" target="_blank">Source Code<br></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/work-1.jpeg">
+                <div class="layer">
+                    <h3>Handriting Bot</h3>
+                    <p>Uses Telegram Bot API to communicate with Python script that returns text in my handwriting.</p>
+                    <a href="https://github.com/tapish101/handwriting_telegrambot" target="_blank">Source Code<br></a>
+                    <a href="https://t.me/tapishhandwritingbot" target="_blank">Try Now</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/work-3.jpg">
+                <div class="layer">
+                    <h3>Search and Rescue Bot</h3>
+                    <p>Made as Major Project with NodeMcu as brain of the system. Bot can automatically navigate surrounding with different sensors.</p>
+                    <a href="https://github.com/tapish101/search-rescue" target="_blank">Source Code<br></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.instructables.com/member/tapish101/" class="btn" target="_blank">See More</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="social-icons">
+                    <a href="https://github.com/tapish101/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:tapishtalan@duck.com"><i class="fa-solid fa-at"></i></a>
+                    <a href="https://t.me/tapish101" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.instructables.com/member/tapish101/" target="_blank"><i class="fa-sharp fa-solid fa-robot"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h3 class="form-heading">Drop Me a Line!</h3>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" id="sub">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Talan. Made by Tapish Talan</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+    
+<script>
+
+    var side=document.getElementById("sidemenu");
+
+    function openmenu(){
+        side.style.right="0";
+    }
+    function closemenu(){
+        side.style.right="-200px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwnUuMtOC31KiAUsmE4jadUM0DG7K37uTZ6turFUY-owLj0im4RPqVtmmVpOoHfQFWeg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        document.getElementById("sub").style.color="#ff004f";
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+            document.getElementById("sub").style.color="#fff";
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+
+    const txt=document.getElementById("text");
+
+    const textLoad = () => {
+        setTimeout(() => {
+            txt.textContent="Passionate about technology";
+        },0);
+        setTimeout(() => {
+            txt.textContent="An avid programmer";
+        },4000);
+        setTimeout(() => {
+            txt.textContent="Turning ideas into reality";
+        },8000);
+    }
+     
+    textLoad();
+    setInterval(textLoad,12000);
+
+</script>
+
+<script>
+    const progress=document.getElementById("progress");
+
+    window.addEventListener("scroll", () => {
+        if(window.pageYOffset > 100){
+            progress.style.display="grid";
+        } else{
+            progress.style.display="none";
+        }
+        const pos= Math.round((window.pageYOffset/(document.documentElement.scrollHeight-950))*100);
+        progress.style.background=`conic-gradient(#ff004f ${pos}%, #ababab ${pos}%)`;
+    })
+</script>
+
+</body>
+</html>
